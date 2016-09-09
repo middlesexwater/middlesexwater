@@ -34,12 +34,6 @@ gulp.task("useref", function () {
         .pipe(gulp.dest("dist"))
 });
 
-/* Add gulpfile.js and package.json to dist (for gh-pages) */
-gulp.task("misc", function() {
-    return gulp.src(["./gulpfile.js", "./package.json"])
-        .pipe(gulp.dest("dist/misc"))
-});
-
 gulp.task("fonts", function () {
     return gulp.src("app/fonts/**/*")
         .pipe(gulp.dest("dist/fonts"))
